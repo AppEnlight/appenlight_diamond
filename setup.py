@@ -22,7 +22,7 @@ setup(name='appenlight_diamond',
       packages=find_packages(),
       include_package_data=True,
       package_data={
-          '': ['*.txt', '*.rst', '*.ini']
+          '': ['*.txt', '*.rst', '*.ini', ]
       },
       install_requires=[
       ],
