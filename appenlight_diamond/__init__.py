@@ -1,14 +1,23 @@
+"""
+Diamond handler for App Enlight (https://appenlight.com/)
+
+To work this handler need basic configuration:
+
+[[AppenlightMetricHandler]]
+apikey = PRIVATE_API_KEY
+#server = http://optinal.serveraddress.com
+
+"""
+
 import datetime
+import json
 import logging
 import urllib2
-import json
 
-from collections import deque, defaultdict
+from collections import deque
 from diamond.handler.Handler import Handler
 
 log = logging.getLogger(__name__)
-
-print(Handler)
 
 
 class AppenlightMetricHandler(Handler):
